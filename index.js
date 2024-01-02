@@ -8,13 +8,13 @@ const inputEl=document.getElementById("input-element")
 
 inputBtn.addEventListener("click",function(){
 
+    const inputVal=inputEl.value
+    Number(inputVal)
 
-    lengthEl.textContent=`${inputEl.value} Meters=${(Number(inputEl.value)*3.281).toFixed(3)} | ${inputEl.value} Feet=${(Number(inputEl.value)/3.281).toFixed(3)}`
+    lengthEl.textContent=`${inputVal} Meters=${(inputVal*3.281).toFixed(3)} | ${inputVal} Feet=${(inputVal/3.281).toFixed(3)}`
 
-    volumeEl.textContent=`${inputEl.value} Liters=${(Number(inputEl.value)*0.264).toFixed(3)} | ${inputEl.value} Gallons=${(Number(inputEl.value)/0.264).toFixed(3)}`
+    volumeEl.textContent=`${inputVal} Liters=${(inputVal*0.264).toFixed(3)} | ${inputVal} Gallons=${(inputVal/0.264).toFixed(3)}`
 
-    massEl.textContent=`${inputEl.value} Kilograms=${(Number(inputEl.value)*2.204).toFixed(3)} | ${inputEl.value} Pounds=${(Number(inputEl.value)/2.204).toFixed(3)}`
-
-    
+    massEl.textContent=`${inputVal} Kilograms=${(inputVal*2.204).toFixed(3)} | ${inputVal} Pounds=${(inputVal/2.204).toFixed(3)}`
 
 })
